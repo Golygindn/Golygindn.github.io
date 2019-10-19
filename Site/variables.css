@@ -1,0 +1,39 @@
+:root {
+
+    /*Color*/
+
+    --Black-color: #000;
+    --Azur-color: #00a79d;
+    --White-color: #fff;
+    --Orange-color: #f7931d;
+    --Grey-color: #939597;
+    --Blue-color: #159db4;
+    --Header_BG-color: rgba(59,153,252,0.10);
+    --Header_BG-color-2: #000;
+    --BG-color: rgba(59,153,252,0.50);
+    --BG-color-2: rgba(255,255,255,0.90);
+    --Button-active: radial-gradient(51% 100%, #846720 20%, #F7931D 100%);
+
+
+    /*Font*/
+    --Font-size-2: 1.5rem;
+    --Font-size: 1.2rem;
+    --Font-size-text: 1rem;
+    --Font-color: #0C1014;
+
+    /*Radius*/
+
+    --Border-radius:10px;
+
+    /*Shadow*/
+    --Box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
+
+
+
+}
+
+
+
+
+
+
