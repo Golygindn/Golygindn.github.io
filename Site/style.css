@@ -227,12 +227,10 @@ button:active {
     border: 3px solid var(--Azur-color) ;
 }
 
-
 h2 {
     font-size: var(--Font-size-2);
     margin: 0 0 1em 0;
 }
-
 
 .contacts {
     width: 100%;
