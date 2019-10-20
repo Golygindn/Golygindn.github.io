@@ -27,7 +27,10 @@ body {
     background-size: contain;
     width: 500px;
     height: 500px;
+
 }
+
+
 
 .menu {
     display: flex;
@@ -65,7 +68,7 @@ a {
 
 .mission {
     width: 100%;
-    height: 888px;
+    height: 1010px;
     background: url("assets/heroes.png") no-repeat center center;
     background-size: cover;
     display: flex;
@@ -77,14 +80,25 @@ a {
 
 .mission_1 {
     width: 100%;
-    height: 888px;
+    height: 910px;
     background: url("assets/about.png") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--BG-color);
+    animation-name: current-anim-name;
+    animation-duration: 2s;
+/*    animation-delay: 1s;*/
+}
 
+@keyframes current-anim-name {
+    0%{
+        opacity: 0;
+    }
+
+    100% {opacity:100%;
+    }
 }
 
 .mission_block {
@@ -144,7 +158,7 @@ a {
 
 .vacancy_home {
     width: 100%;
-    height: 988px;
+    height: 1010px;
     background: url("assets/books-break-coffee-927451.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
@@ -170,8 +184,8 @@ a {
 
 .jobs_vacancy_home {
     color: var(--Font-color);
-    width: 400px;
-    /*padding: 2rem;*/
+    width: 100%;
+    padding: 2rem;
     font-size: var(--Font-size-text);
 
 }
@@ -213,7 +227,7 @@ h2 {
 
 .contacts {
     width: 100%;
-    height: 988px;
+    height: 1010px;
     background: url("assets/Mountains.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
