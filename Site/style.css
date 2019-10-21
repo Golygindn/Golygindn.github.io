@@ -478,7 +478,7 @@ p{
     transition: all 0.3s ease-in, background 0.5s ease-in;
     transition-delay: 0.25s;
 }
-
+bvn,vb
 .window .header.menu-opened .burger-container {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
