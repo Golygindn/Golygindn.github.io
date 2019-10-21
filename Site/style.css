@@ -387,6 +387,7 @@ p{
     display: inline-block;
     position: absolute;
     /*height: 100%;*/
+    background: url("assets/lo");
     line-height: 50px;
     width: 50px;
     height: 50px;
@@ -444,17 +445,6 @@ p{
     transition-delay: 0.28s;
 }
 
-.window .header ul.menu li.menu-item:nth-child(5) {
-    transition-delay: 0.21s;
-}
-
-.window .header ul.menu li.menu-item:nth-child(6) {
-    transition-delay: 0.14s;
-}
-
-.window .header ul.menu li.menu-item:nth-child(7) {
-    transition-delay: 0.07s;
-}
 
 .window .header ul.menu li.menu-item:last-child {
     border: none;
@@ -475,25 +465,16 @@ p{
     display: inline-block;
     height: 300px;
     background-color: #000;
-    transition: all 0.3s ease-in, background 0.5s ease-in;
-    transition-delay: 0.25s;
-}
-bvn,vb
-.window .header.menu-opened .burger-container {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transition: all 0.2s ease-in, background 0.3s ease-in;
+    transition-delay: 0.1s;
 }
 
-.window .header.menu-opened .burger-container #burger .bar {
-    transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transition-delay: 0.2s;
-}
+
 
 .window .header.menu-opened .burger-container #burger .bar.topBar {
     -webkit-transform: translateY(4px) rotate(45deg);
     transform: translateY(4px) rotate(45deg);
 }
-
 .window .header.menu-opened .burger-container #burger .bar.btmBar {
     -webkit-transform: translateY(3px) rotate(-45deg);
     transform: translateY(3px) rotate(-45deg);
@@ -539,38 +520,6 @@ bvn,vb
     transition-delay: 0.3s;
 }
 
-.window .content {
-    font-family: "Ek Mukta", sans-serif;
-    padding: 67px 4% 0;
-    text-align: justify;
-    overflow: scroll;
-    max-height: 100%;
-}
-
-.window .content::-webkit-scrollbar {
-    display: none;
-}
-
-.window .content h2 {
-    margin-bottom: 0px;
-    letter-spacing: 1px;
-}
-
-.window .content img {
-    width: 95%;
-    position: relative;
-    display: block;
-    margin: 75px auto 75px;
-}
-
-.window .content img:nth-of-type(2) {
-    margin: 75px auto;
-}
-
-.window {
-    display: none;
-}
-
 
 @media  (max-width: 500px) {
     .header {
@@ -579,5 +528,11 @@ bvn,vb
 
     .window {
         display: block;
+    }
+}
+
+@media (min-width: 500px) {
+    .window {
+        display: none;
     }
 }
