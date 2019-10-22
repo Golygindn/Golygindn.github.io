@@ -212,6 +212,7 @@ button {
     height: 50px;
     border-radius: var(--Border-radius);
     background-color: var(--Azur-color);
+    box-shadow: var(--Box-shadow);
     border: none;
     margin: 2rem;
 
@@ -230,7 +231,7 @@ button:hover {
 
 button:active {
     background-color: var(--Orange-color);
-    border: 3px solid var(--Azur-color);
+    border: 2px solid var(--White-color);
 }
 
 button:focus {
@@ -335,7 +336,7 @@ p{
     left: 0;
     height: 50px;
     width: 100%;
-    background: var(--Black-color);
+    background: var(--BG-color-opacity_0);
     overflow: visible;
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s;
