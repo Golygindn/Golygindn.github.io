@@ -25,6 +25,8 @@
     /*Radius*/
 
     --Border-radius:10px;
+    --Border-radius-mobile:6px;
+
 
     /*Shadow*/
     --Box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
