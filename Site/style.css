@@ -65,7 +65,7 @@ a {
 }
 
 .mission {
-/*    width: 100%;*/
+    width: 100%;
     height: 1010px;
     background: url("assets/heroes.png") no-repeat center center;
     background-size: cover;
@@ -85,6 +85,7 @@ a {
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--BG-color);
+
     animation-name: current-anim-name;
     animation-duration: 2s;
 }
@@ -110,6 +111,7 @@ a {
     padding: 2rem;
     transition: 1s all ease-in;
     transition: 2s rigth ease-in;
+
 }
 
 .mission_block:hover {
@@ -310,9 +312,8 @@ p{
 }*/
 
 .window {
-/*    position: relative;*/
-    display: flex;
-    flex-direction: column-reverse;
+    position: relative;
+    display: block;
     width: 100%;
     height: 50px;
     box-sizing: border-box;
@@ -381,17 +382,12 @@ p{
     -webkit-transform: translateY(6px) rotate(0deg);
     transform: translateY(6px) rotate(0deg);
 }
-.icon{
-    background: url("./assets/Logo.png") no-repeat center center;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-}
 
-/*.window .header .icon {
+.window .header .icon {
     display: inline-block;
     position: absolute;
-    background: url("assets/Logo.png");
+    /*height: 100%;*/
+    background: url("assets/lo");
     line-height: 50px;
     width: 50px;
     height: 50px;
@@ -401,8 +397,8 @@ p{
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-}*/
-/*
+}
+
 .window .header .icon.icon-bag {
     right: 0;
     top: 0;
@@ -413,7 +409,7 @@ p{
     transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition-delay: 0.65s;
-}*/
+}
 
 .window .header ul.menu {
     position: relative;
@@ -539,28 +535,4 @@ p{
     .window {
         display: none;
     }
-}
-
-@media (max-width: 500px) {
-    .mission {
-        padding: 0.5rem 2rem;
-        justify-content: center;
-        height: 800px;
-    }
-}
-
-@media (max-width: 500px) {
-    .mission_block {
-        color: var(--Font-color);
-        font-size: var(--Font-size-mobile);
-        background: var(--BG-color-2);
-        box-shadow: var(--Box-shadow);
-        border-radius: var(--Border-radius);
-        box-sizing: border-box;
-        width: 100%;
-        padding: 2rem;
-        transition: 1s all ease-in;
-        transition: 2s rigth ease-in;
-    }
-
 }
