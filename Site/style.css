@@ -189,7 +189,7 @@ a {
 .jobs_vacancy_home {
     color: var(--Font-color);
     /*    width: 100%;*/
-    margin: 2rem;
+    margin: 2rem 2rem 0;
     font-size: var(--Font-size-text);
 
 }
@@ -213,6 +213,7 @@ button {
     border-radius: var(--Border-radius);
     background-color: var(--Azur-color);
     border: none;
+    margin: 2rem;
 
 }
 
