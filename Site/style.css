@@ -139,21 +139,7 @@ a {
     align-items: center;
 }
 
-/*
 
-.jobs {
-    width: 60%;
-    height: 600px;
-    background: var(--BG-color-2);
-    border-radius: var(--Border-radius);
-    box-shadow: var(--Box-shadow);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 4rem;
-
-}
-*/
 
 .jobs_vacancy {
     padding: 1rem;
@@ -204,11 +190,8 @@ button {
     background-color: var(--Azur-color);
     color: var(--White-color);
     box-shadow: var(--Box-shadow);
-/*    display: flex;s
-    align-content: center;*/
     border: none;
     margin-top: 2rem;
-
 }
 
 
@@ -228,6 +211,10 @@ button:focus {
 .h2 {
     font-size: var(--Font-size-2);
     margin: 1rem 1rem 1rem 0;
+}
+
+a {
+    width: 100%;
 }
 
 .contacts {
