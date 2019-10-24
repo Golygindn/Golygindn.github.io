@@ -275,7 +275,6 @@ a {
 
 /*Burger*/
 
-
 .window {
     display: flex;
     flex-direction: column-reverse;
@@ -357,7 +356,6 @@ a {
 .window .header ul.menu {
     position: relative;
     display: block;
-    padding: 0px 48px 0;
     list-style: none;
 }
 
@@ -470,7 +468,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .footer_logo{
@@ -631,8 +628,32 @@ a {
 }
 
 @media (max-width: 730px) {
+    .Copyright{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 730px) {
     .footer_text {
         margin-right: 1rem;
+        font-size: var(--Font-size-mobile);
+    }
+
+}
+
+@media (max-width: 730px) {
+    .footer{
+        height: 60px;
+    }
+}
+
+
+
+@media (max-width: 730px) {
+    .footer_logo{
+        width: 80px;
+        height: 60px;
     }
 
 }
