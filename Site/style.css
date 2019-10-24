@@ -406,7 +406,7 @@ a {
 
 .window .header.menu-opened {
     display: inline-block;
-    height: 300px;
+    height: 100%;
     background-color: #000;
     transition: all 0.2s ease-in, background 0.3s ease-in;
     transition-delay: 0.1s;
