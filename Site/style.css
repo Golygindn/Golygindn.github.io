@@ -463,6 +463,18 @@ a {
     transition-delay: 0.3s;
 }
 
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--Black-color);
+    color: var(--White-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Ubuntu-Medium, serif;
+    font-size: var(--Font-size);
+
+}
 
 @media (max-width: 600px) {
     .header {
@@ -480,11 +492,11 @@ a {
     }
 }
 
-@media (max-width: 730px) {
+/*@media (max-width: 730px) {
     .logo {
         display: none;
     }
-}
+}*/
 
 @media (max-width: 730px) {
     .menu {
@@ -535,7 +547,7 @@ a {
 
         padding: 0.5rem 1rem;
         justify-content: center;
-        height: 800px;
+        height: 650px;
     }
 }
 
@@ -588,5 +600,18 @@ a {
         margin: 1rem;
     }
 
+}
+
+@media  (max-width: 730px) {
+    .footer{
+        font-size: var(--Font-size-mobile);
+        font-family: Ubuntu-Light, sans-serif;
+    }
+}
+
+@media (max-width: 730px) {
+    .h2{
+        font-size: var(--Font-size);
+    }
 }
 
