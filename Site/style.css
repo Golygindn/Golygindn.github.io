@@ -118,7 +118,7 @@ a {
 .about {
     width: 100%;
     height: 888px;
-    background: url("assets/AboutPage.jpg") no-repeat center center;
+    background: url("assets/neon.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
