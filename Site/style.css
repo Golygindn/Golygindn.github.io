@@ -107,8 +107,6 @@ a {
     box-sizing: border-box;
     width: 500px;
     padding: 2rem;
-    transition: 1s all ease-in;
-    transition: 2s rigth ease-in;
 }
 
 .mission_block:hover {
@@ -314,6 +312,14 @@ a {
     width: 100px;
     height: 80px;
 }
+.logo_footer{
+    margin: 1rem;
+    background: url("./assets/Logo.png") no-repeat center center;
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+}
+
 
 .footer_text{
     font-family: Ubuntu-Medium, serif;
@@ -455,8 +461,6 @@ a {
         box-sizing: border-box;
         width: 100%;
         padding: 2rem;
-        transition: 1s all ease-in;
-        transition: 2s rigth ease-in;
     }
 
 }
