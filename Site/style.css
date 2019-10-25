@@ -536,6 +536,8 @@ a {
 
 
 
+
+
 @media (max-width: 730px) {
     .logo_mobile{
         width: 60px;
@@ -554,6 +556,11 @@ a {
         display: none;
     }
 }
+
+
+
+
+
 
 @font-face {
     font-family: 'Ubuntu-Regular';
