@@ -545,6 +545,11 @@ a {
     }
 }
 
+@media (min-width: 601px) {
+    .logo_mobile {
+        display: none;
+    }
+}
 
 @font-face {
     font-family: 'Ubuntu-Regular';
