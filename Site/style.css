@@ -350,6 +350,18 @@ a {
     overflow: hidden;
 }
 
+
+.Menu_section_mobile a {
+    display: block;
+    text-decoration: none;
+    font-family: Ubuntu-Light, sans-serif;
+    font-size: var(--Font-size);
+    color: var(--White-color);
+    padding: 10px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .header {
         display: none;
