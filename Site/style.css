@@ -274,7 +274,7 @@ a {
 .mobile-menu-btn span::after {
     display: block;
     background-color: white;
-    height: 4px;
+    height: 2px;
     position: absolute;
     transition: all .3s ease-in-out;
     width: 30px;
