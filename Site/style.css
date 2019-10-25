@@ -225,7 +225,7 @@ a {
 }
 
 .contacts_background {
-    width: 80%;
+    width: 60%;
     background: var(--BG-color-2);
     border-radius: var(--Border-radius);
     box-shadow: var(--Box-shadow);
