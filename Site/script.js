@@ -12,13 +12,29 @@ $('.menu a').each(function () {
 
 
 
-/*burger*/
+// /*burger*/
+//
+// (function(){
+//     const burger = document.querySelector('.burger-container'),
+//         header = document.querySelector('.header');
+//
+//     burger.onclick = function() {
+//         header.classList.toggle('menu-opened');
+//     }
+// }());
 
-(function(){
-    var burger = document.querySelector('.burger-container'),
-        header = document.querySelector('.header');
 
-    burger.onclick = function() {
-        header.classList.toggle('menu-opened');
+/*burger ver 2*/
+
+$('.mobile-menu-btn').on('click', function() {
+    if($(this).hasClass('active')) {
+        $('.mobile-menu-btn').removeClass('active');
+        $('.menu_mobile-active').removeClass('menu_mobile-active');
+    } else {
+        $('.mobile-menu-btn').addClass('active');
+        $('.menu_mobile').addClass('menu_mobile-active');
+        $('html').addClass('menu_html');
+
     }
-}());
+});
+s

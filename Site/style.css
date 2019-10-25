@@ -243,223 +243,59 @@ a {
 }
 
 
-@font-face {
-    font-family: 'Ubuntu-Regular';
-    src: url("../fonts/Ubuntu-Regular.woff");
-    font-weight: normal;
-    font-style: normal;
+
+/*Burger*/
+.mobile-menu-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    margin-left: 10px;
+    outline: 0;
+    position: relative;
+    width: 50px;
 }
-
-@font-face {
-    font-family: 'Ubuntu-Light';
-    src: url("../fonts/Ubuntu-Light.woff");
-    font-weight: normal;
-    font-style: normal;
+.mobile-menu-btn span {
+    left: 10px;
+    top: 24px;
 }
-
-
-@font-face {
-    font-family: 'Ubuntu-Italic';
-    src: url('../fonts/Ubuntu-Italic.woff');
-    font-weight: normal;
-    font-style: italic;
+.mobile-menu-btn span::before {
+    top: -8px;
 }
-
-@font-face {
-    font-family: 'Ubuntu-Medium';
-    src: url('../fonts/Ubuntu-Medium.woff');
-    font-weight: 500;
-    font-style: normal;
+.mobile-menu-btn span::after {
+    bottom: -8px;
+}
+.mobile-menu-btn span::before, .mobile-menu-btn span::after {
+    content: '';
+}
+.mobile-menu-btn span,
+.mobile-menu-btn span::before,
+.mobile-menu-btn span::after {
+    display: block;
+    background-color: white;
+    height: 4px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 30px;
+}
+.mobile-menu-btn.active span {
+    background-color: transparent;
+}
+.mobile-menu-btn.active span::before, .mobile-menu-btn.active span::after {
+    background-color: antiquewhite;
+    top: 0;
+}
+.mobile-menu-btn.active span::before {
+    transform: rotate(45deg);
+}
+.mobile-menu-btn.active span::after {
+    transform: rotate(-45deg);
 }
 
 
 /*Burger*/
 
-.window {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-    box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
-    overflow: visible;
-    border-radius: 3px;
-    background: #F1F1F1;
-}
-
-.window .header {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    background: var(--Black-color);
-    overflow: visible;
-    transition: all 0.5s ease-out, background 1s ease-out;
-    transition-delay: 0.2s;
-    z-index: 1;
-}
-
-.window .header .burger-container {
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.window .header .burger-container #burger {
-    width: 18px;
-    height: 8px;
-    position: relative;
-    display: block;
-    margin: -4px auto 0;
-    top: 50%;
-}
-
-.window .header .burger-container #burger .bar {
-    width: 100%;
-    height: 1px;
-    display: block;
-    position: relative;
-    background: #FFF;
-    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transition-delay: 0s;
-}
-
-.window .header .burger-container #burger .bar.topBar {
-    -webkit-transform: translateY(0px) rotate(0deg);
-    transform: translateY(0px) rotate(0deg);
-}
-
-.window .header .burger-container #burger .bar.btmBar {
-    -webkit-transform: translateY(6px) rotate(0deg);
-    transform: translateY(6px) rotate(0deg);
-}
-
-.icon {
-    background: url("./assets/Logo.png") no-repeat center center;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-}
-
-.window .header ul.menu {
-    position: relative;
-    display: block;
-    list-style: none;
-}
-
-.window .header ul.menu li.menu-item {
-    border-bottom: 1px solid #333;
-    margin-top: 5px;
-    -webkit-transform: scale(1.15) translateY(-30px);
-    transform: scale(1.15) translateY(-30px);
-    opacity: 0;
-    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-}
-
-.window .header ul.menu li.menu-item:nth-child(1) {
-    transition-delay: 0.49s;
-}
-
-.window .header ul.menu li.menu-item:nth-child(2) {
-    transition-delay: 0.42s;
-}
-
-.window .header ul.menu li.menu-item:nth-child(3) {
-    transition-delay: 0.35s;
-}
-
-.window .header ul.menu li.menu-item:nth-child(4) {
-    transition-delay: 0.28s;
-}
-
-
-.window .header ul.menu li.menu-item:last-child {
-    border: none;
-}
-
-.window .header ul.menu li.menu-item a {
-    display: block;
-    position: relative;
-    color: #FFF;
-    font-family: Ubuntu-Light, sans-serif;
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 2.35;
-    width: 100%;
-}
-
-.window .header.menu-opened {
-    display: inline-block;
-    height: 100%;
-    background-color: #000;
-    transition: all 0.2s ease-in, background 0.3s ease-in;
-    transition-delay: 0.1s;
-}
-
-
-.window .header.menu-opened .burger-container #burger .bar.topBar {
-    -webkit-transform: translateY(4px) rotate(45deg);
-    transform: translateY(4px) rotate(45deg);
-}
-
-.window .header.menu-opened .burger-container #burger .bar.btmBar {
-    -webkit-transform: translateY(3px) rotate(-45deg);
-    transform: translateY(3px) rotate(-45deg);
-}
-
-.window .header.menu-opened ul.menu li.menu-item {
-    -webkit-transform: scale(1) translateY(0px);
-    transform: scale(1) translateY(0px);
-    opacity: 1;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(1) {
-    transition-delay: 0.27s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(2) {
-    transition-delay: 0.34s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(3) {
-    transition-delay: 0.41s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(4) {
-    transition-delay: 0.48s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(5) {
-    transition-delay: 0.55s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(6) {
-    transition-delay: 0.62s;
-}
-
-.window .header.menu-opened ul.menu li.menu-item:nth-child(7) {
-    transition-delay: 0.69s;
-}
-
-.window .header.menu-opened .icon.icon-bag {
-    -webkit-transform: translateX(75px);
-    transform: translateX(75px);
-    transition-delay: 0.3s;
-}
 
 .footer{
     width: 100%;
@@ -492,6 +328,27 @@ a {
     margin-right: 10px;
 }
 
+
+.menu_mobile{
+    display: none;
+}
+
+.menu_mobile-active{
+    overflow: visible;
+    /*margin-top: 1rem;*/
+    background: var(--Black-color);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_html{
+    overflow: hidden;
+}
 
 @media (max-width: 600px) {
     .header {
@@ -656,4 +513,35 @@ a {
         height: 60px;
     }
 
+}
+
+
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url("../fonts/Ubuntu-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url("../fonts/Ubuntu-Light.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Ubuntu-Italic';
+    src: url('../fonts/Ubuntu-Italic.woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('../fonts/Ubuntu-Medium.woff');
+    font-weight: 500;
+    font-style: normal;
 }
