@@ -249,13 +249,14 @@ a {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    float: left;
-    height: 50px;
-    margin-left: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
     outline: 0;
     position: relative;
     width: 50px;
 }
+
 .mobile-menu-btn span {
     left: 10px;
     top: 24px;
@@ -273,7 +274,7 @@ a {
 .mobile-menu-btn span::before,
 .mobile-menu-btn span::after {
     display: block;
-    background-color: white;
+    background-color: var(--White-color);
     height: 2px;
     position: absolute;
     transition: all .3s ease-in-out;
@@ -283,7 +284,7 @@ a {
     background-color: transparent;
 }
 .mobile-menu-btn.active span::before, .mobile-menu-btn.active span::after {
-    background-color: antiquewhite;
+    background-color: var(--White-color);
     top: 0;
 }
 .mobile-menu-btn.active span::before {
@@ -306,7 +307,8 @@ a {
     align-items: center;
 }
 
-.footer_logo{
+.logo_mobile{
+    margin: 1rem;
     background: url("./assets/Logo.png") no-repeat center center;
     background-size: contain;
     width: 100px;
@@ -328,6 +330,10 @@ a {
     margin-right: 10px;
 }
 
+.header_mobile{
+    display: flex;
+    justify-content: space-between;
+}
 
 .menu_mobile{
     display: none;
@@ -335,7 +341,7 @@ a {
 
 .menu_mobile-active{
     overflow: visible;
-    /*margin-top: 1rem;*/
+    margin-top: 1rem;
     background: var(--Black-color);
     height: 100%;
     width: 100%;
@@ -360,7 +366,14 @@ a {
     padding: 10px 30px;
     box-sizing: border-box;
     cursor: pointer;
+
 }
+
+/*
+.Menu_section_mobile a:first-child{
+    margin-top: 1rem;
+}
+*/
 
 @media (max-width: 600px) {
     .header {
@@ -520,8 +533,8 @@ a {
 
 
 @media (max-width: 730px) {
-    .footer_logo{
-        width: 80px;
+    .logo_mobile{
+        width: 60px;
         height: 60px;
     }
 
