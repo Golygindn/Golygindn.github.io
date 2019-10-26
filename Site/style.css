@@ -225,7 +225,7 @@ a {
 }
 
 .contacts_background {
-    width: 60%;
+
     background: var(--BG-color-2);
     border-radius: var(--Border-radius);
     box-shadow: var(--Box-shadow);
@@ -356,8 +356,21 @@ a {
     top: 70px;
     display: flex;
     flex-direction: column;
+    animation-name: menu_mobile;
+    animation-duration: 0.5s;
 }
 
+@keyframes menu_mobile {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 .menu_html{
     overflow: hidden;
 }
@@ -490,13 +503,16 @@ a {
 @media (max-width: 730px) {
     .contacts{
         height: 660px;
+
     }
 }
+
 
 @media (max-width: 730px) {
     .contacts_background{
         margin: 1rem;
     }
+
 
 }
 

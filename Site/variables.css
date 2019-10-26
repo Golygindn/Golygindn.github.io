@@ -1,7 +1,6 @@
 :root {
 
     /*Color*/
-
     --Black-color: #000;
     --Azur-color: #00a79d;
     --White-color: #fff;
@@ -24,15 +23,11 @@
     --Font-color: #0C1014;
 
     /*Radius*/
-
     --Border-radius:10px;
     --Border-radius-mobile:6px;
 
-
     /*Shadow*/
     --Box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
-
-
 
 }
 
