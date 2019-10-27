@@ -177,8 +177,9 @@ a {
 
 
 button {
+/*    width: 250px;*/
     width: 100%;
-    height: 50px;
+    height: 40px;
     font-family: Ubuntu-Regular, serif;
     font-size: var(--Font-size-text);
     border-radius: var(--Border-radius);
@@ -225,18 +226,20 @@ a {
 }
 
 .contacts_background {
-
     background: var(--BG-color-2);
     border-radius: var(--Border-radius);
     box-shadow: var(--Box-shadow);
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin: 1rem;
+    width: 80%;
 }
 
 .contacts_info {
-    /*margin: 2rem;*/
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: var(--Font-size);
 }
 
@@ -343,6 +346,21 @@ a {
 
 .menu_mobile{
     display: none;
+    animation-name: menu_mobile_closed;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes menu_mobile_closed {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    100% {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .menu_mobile-active{
@@ -388,11 +406,28 @@ a {
 
 }
 
-/*
-.Menu_section_mobile a:first-child{
-    margin-top: 1rem;
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-*/
+
+input{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    width: 300px;
+    height: 24px;
+    border: 1px solid;
+    border-color: var(--Grey-light-color);
+    border-radius: var(--Border-radius-input);
+    padding-left: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
 
 @media (max-width: 600px) {
     .header {
