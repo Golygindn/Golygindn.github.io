@@ -180,7 +180,7 @@ button {
 /*    width: 250px;*/
     width: 100%;
     height: 40px;
-    font-family: Ubuntu-Regular, serif;
+    /*font-family: Ubuntu-Regular, serif;*/
     font-size: var(--Font-size-text);
     border-radius: var(--Border-radius);
     background-color: var(--Azur-color);
@@ -410,24 +410,141 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: min-content;
+
 }
 
 input{
     margin: 0.5rem 0.5rem 0.5rem 0;
-    width: 300px;
-    height: 24px;
+    width: 400px;
+    height: 30px;
     border: 1px solid;
     border-color: var(--Grey-light-color);
     border-radius: var(--Border-radius-input);
     padding-left: 5px;
+    box-sizing: border-box;
 }
 
 input:focus{
     outline: none;
+    border: 1px solid var(--Orange-color);
+}
+input:first-child{
+    margin-top: 1rem;
+}
+
+label{
+    width: min-content;
+}
+
+.send_button {
+    width: 300px;
 }
 
 
 
+@media (max-width: 730px) {
+    .menu {
+        height: 100px;
+    }
+    .mission_1 {
+        width: 100%;
+        height: 660px;
+        background: url("assets/about.png") no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--BG-color);
+        animation-name: current-anim-name;
+        animation-duration: 2s;
+    }
+    .nice_logo {
+        width: 300px;
+        height: 300px;
+    }
+    button {
+        width: 100%;
+        height: 40px;
+        font-family: Ubuntu-Light, sans-serif;
+        border-radius: var(--Border-radius);
+    }
+    a {
+        width: 100%;
+    }
+    .mission {
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        height: 650px;
+    }
+    .jobs_home {
+        margin: 1rem;
+        width: 100%;
+    }
+    .vacancy_home {
+        justify-content: center;
+        height: 660px;
+    }
+    .jobs_vacancy_home {
+        font-size: var(--Font-size-mobile);
+    }
+    .contacts{
+        height: 660px;
+    }
+    .contacts_background{
+        margin: 1rem;
+    }
+    .footer{
+        font-size: var(--Font-size-mobile);
+        font-family: Ubuntu-Light, sans-serif;
+    }
+    .h2{
+        font-size: var(--Font-size);
+    }
+    .Copyright{
+        width: 16px;
+        height: 16px;
+    }
+    .footer_text {
+        margin-right: 1rem;
+        font-size: var(--Font-size-mobile);
+    }
+    .footer{
+        height: 60px;
+    }
+    .logo_mobile{
+        width: 60px;
+        height: 60px;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+    .logo_mobile {
+        display: none;
+    }
+
+}
+
+@media (min-width: 730px) {
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .mission_block {
+        color: var(--Font-color);
+        font-size: var(--Font-size-mobile);
+        background: var(--BG-color-2);
+        box-shadow: var(--Box-shadow);
+        border-radius: var(--Border-radius);
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem;
+    }
+
+}
 
 @media (max-width: 600px) {
     .header {
@@ -446,170 +563,20 @@ input:focus{
 }
 
 
+
+
+
+/*
 @media (max-width: 730px) {
-    .menu {
-        height: 100px;
+    .header{
+    display: none;
     }
-}
 
-@media (max-width: 730px) {
-    .mission_1 {
-        width: 100%;
-        height: 660px;
-        background: url("assets/about.png") no-repeat center center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid var(--BG-color);
-        animation-name: current-anim-name;
-        animation-duration: 2s;
-    }
-}
-
-
-@media (max-width: 730px) {
-    .nice_logo {
+}*/
+/*@media (max-width: 730px) {
+    input{
         width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 730px) {
-    button {
-        width: 100%;
-        height: 40px;
-        font-family: Ubuntu-Light, sans-serif;
-        border-radius: var(--Border-radius-mobile);
-    }
-}
-
-@media (max-width: 730px) {
-    a {
-        width: 100%;
-    }
-}
-
-@media (max-width: 730px) {
-    .mission {
-
-        padding: 0.5rem 1rem;
-        justify-content: center;
-        height: 650px;
-    }
-}
-
-@media (max-width: 500px) {
-    .mission_block {
-        color: var(--Font-color);
-        font-size: var(--Font-size-mobile);
-        background: var(--BG-color-2);
-        box-shadow: var(--Box-shadow);
-        border-radius: var(--Border-radius);
-        box-sizing: border-box;
-        width: 100%;
-        padding: 2rem;
-    }
-
-}
-
-
-@media (max-width: 730px) {
-    .jobs_home {
-        margin: 1rem;
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 730px) {
-    .vacancy_home {
-        justify-content: center;
-        height: 660px;
-    }
-}
-
-@media (max-width: 730px) {
-    .jobs_vacancy_home {
-        font-size: var(--Font-size-mobile);
-    }
-}
-
-@media (max-width: 730px) {
-    .contacts{
-        height: 660px;
-
-    }
-}
-
-
-@media (max-width: 730px) {
-    .contacts_background{
-        margin: 1rem;
-    }
-
-
-}
-
-@media  (max-width: 730px) {
-    .footer{
-        font-size: var(--Font-size-mobile);
-        font-family: Ubuntu-Light, sans-serif;
-    }
-}
-
-@media (max-width: 730px) {
-    .h2{
-        font-size: var(--Font-size);
-    }
-}
-
-@media (max-width: 730px) {
-    .Copyright{
-        width: 16px;
-        height: 16px;
-    }
-}
-
-@media (max-width: 730px) {
-    .footer_text {
-        margin-right: 1rem;
-        font-size: var(--Font-size-mobile);
-    }
-
-}
-
-@media (max-width: 730px) {
-    .footer{
-        height: 60px;
-    }
-}
-
-
-
-
-
-@media (max-width: 730px) {
-    .logo_mobile{
-        width: 60px;
-        height: 60px;
-    }
-
-}
-@media (min-width: 601px) {
-    .mobile-menu-btn {
-        display: none;
-    }
-}
-
-@media (min-width: 601px) {
-    .logo_mobile {
-        display: none;
-    }
-}
-
-
-
+    }*/
 
 
 
