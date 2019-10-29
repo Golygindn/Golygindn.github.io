@@ -565,13 +565,9 @@ label {
         height: 60px;
     }
 
-    .mobile-menu-btn {
-        display: none;
-    }
 
-    .logo_mobile {
-        display: none;
-    }
+
+
 
     .mission_block {
         color: var(--Font-color);
@@ -599,6 +595,14 @@ label {
         display: none;
     }
 }
+
+
+/*.logo_mobile {
+display: none;
+    .mobile-menu-btn {
+        display: none;
+    }
+}*/
 
 @media (min-width: 730px) {
     .header_mobile {
