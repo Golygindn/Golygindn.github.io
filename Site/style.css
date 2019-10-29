@@ -594,15 +594,11 @@ label {
     .mail_general {
         display: none;
     }
-}
-
-
-/*.logo_mobile {
-display: none;
-    .mobile-menu-btn {
+    .header {
         display: none;
     }
-}*/
+}
+
 
 @media (min-width: 730px) {
     .header_mobile {
@@ -623,17 +619,3 @@ display: none;
     }
 }
 
-@media (max-width: 600px) {
-    .header {
-        display: none;
-    }
-    .window {
-        display: block;
-    }
-}
-
-@media (min-width: 600px) {
-    .window {
-        display: none;
-    }
-}
