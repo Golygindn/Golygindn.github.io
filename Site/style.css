@@ -1,3 +1,6 @@
+
+/**box-sizing: border-box;*/
+
 html, body {
     padding: 0;
     margin: 0;
@@ -177,7 +180,7 @@ a {
 
 
 button {
-/*    width: 250px;*/
+    /*    width: 250px;*/
     width: 100%;
     height: 40px;
     /*font-family: Ubuntu-Regular, serif;*/
@@ -244,7 +247,6 @@ a {
 }
 
 
-
 /*Burger*/
 .mobile-menu-btn {
     background-color: transparent;
@@ -262,15 +264,19 @@ a {
     left: 10px;
     top: 24px;
 }
+
 .mobile-menu-btn span::before {
     top: -8px;
 }
+
 .mobile-menu-btn span::after {
     bottom: -8px;
 }
+
 .mobile-menu-btn span::before, .mobile-menu-btn span::after {
     content: '';
 }
+
 .mobile-menu-btn span,
 .mobile-menu-btn span::before,
 .mobile-menu-btn span::after {
@@ -281,16 +287,20 @@ a {
     transition: all .3s ease-in-out;
     width: 30px;
 }
+
 .mobile-menu-btn.active span {
     background-color: transparent;
 }
+
 .mobile-menu-btn.active span::before, .mobile-menu-btn.active span::after {
     background-color: var(--White-color);
     top: 0;
 }
+
 .mobile-menu-btn.active span::before {
     transform: rotate(45deg);
 }
+
 .mobile-menu-btn.active span::after {
     transform: rotate(-45deg);
 }
@@ -299,7 +309,7 @@ a {
 /*Burger*/
 
 
-.footer{
+.footer {
     width: 100%;
     height: 100px;
     background-color: var(--Black-color);
@@ -308,14 +318,15 @@ a {
     align-items: center;
 }
 
-.logo_mobile{
+.logo_mobile {
     margin: 1rem;
     background: url("./assets/Logo.png") no-repeat center center;
     background-size: contain;
     width: 100px;
     height: 80px;
 }
-.logo_footer{
+
+.logo_footer {
     margin: 1rem;
     background: url("./assets/Logo.png") no-repeat center center;
     background-size: contain;
@@ -324,14 +335,14 @@ a {
 }
 
 
-.footer_text{
+.footer_text {
     font-family: Ubuntu-Medium, serif;
     font-size: var(--Font-size);
     color: var(--White-color);
     margin-right: 4rem;
 }
 
-.Copyright{
+.Copyright {
     background: url("./assets/Copyright.png") no-repeat center center;
     background-size: contain;
     width: 20px;
@@ -339,12 +350,12 @@ a {
     margin-right: 10px;
 }
 
-.header_mobile{
+.header_mobile {
     display: flex;
     justify-content: space-between;
 }
 
-.menu_mobile{
+.menu_mobile {
     display: none;
     animation-name: menu_mobile_closed;
     animation-duration: 0.5s;
@@ -363,7 +374,7 @@ a {
     }
 }
 
-.menu_mobile-active{
+.menu_mobile-active {
     overflow: visible;
     margin-top: 1rem;
     background: var(--Black-color);
@@ -389,7 +400,8 @@ a {
         width: 100%;
     }
 }
-.menu_html{
+
+.menu_html {
     overflow: hidden;
 }
 
@@ -406,7 +418,7 @@ a {
 
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,7 +427,7 @@ a {
 
 }
 
-input{
+input {
     margin: 0.5rem 0.5rem 0.5rem 0;
     width: 400px;
     height: 30px;
@@ -426,15 +438,16 @@ input{
     box-sizing: border-box;
 }
 
-input:focus{
+input:focus {
     outline: none;
     border: 1px solid var(--Orange-color);
 }
-input:first-child{
+
+input:first-child {
     margin-top: 1rem;
 }
 
-label{
+label {
     width: min-content;
 }
 
@@ -443,11 +456,11 @@ label{
 }
 
 
-
 @media (max-width: 730px) {
     .menu {
         height: 100px;
     }
+
     .mission_1 {
         width: 100%;
         height: 660px;
@@ -460,79 +473,87 @@ label{
         animation-name: current-anim-name;
         animation-duration: 2s;
     }
+
     .nice_logo {
         width: 300px;
         height: 300px;
     }
+
     button {
         width: 100%;
         height: 40px;
         font-family: Ubuntu-Light, sans-serif;
         border-radius: var(--Border-radius);
     }
+
     a {
         width: 100%;
     }
+
     .mission {
         padding: 0.5rem 1rem;
         justify-content: center;
         height: 650px;
     }
+
     .jobs_home {
         margin: 1rem;
         width: 100%;
     }
+
     .vacancy_home {
         justify-content: center;
         height: 660px;
     }
+
     .jobs_vacancy_home {
         font-size: var(--Font-size-mobile);
     }
-    .contacts{
+
+    .contacts {
         height: 660px;
     }
-    .contacts_background{
+
+    .contacts_background {
         margin: 1rem;
     }
-    .footer{
+
+    .footer {
         font-size: var(--Font-size-mobile);
         font-family: Ubuntu-Light, sans-serif;
     }
-    .h2{
+
+    .h2 {
         font-size: var(--Font-size);
     }
-    .Copyright{
+
+    .Copyright {
         width: 16px;
         height: 16px;
     }
+
     .footer_text {
         margin-right: 1rem;
         font-size: var(--Font-size-mobile);
     }
-    .footer{
+
+    .footer {
         height: 60px;
     }
-    .logo_mobile{
+
+    .logo_mobile {
         width: 60px;
         height: 60px;
     }
+
     .mobile-menu-btn {
         display: none;
     }
+
     .logo_mobile {
         display: none;
     }
 
-}
-
-@media (min-width: 730px) {
-    .header_mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
     .mission_block {
         color: var(--Font-color);
         font-size: var(--Font-size-mobile);
@@ -543,14 +564,27 @@ label{
         width: 100%;
         padding: 2rem;
     }
+    input {
+        width: 100%;
+    }
+    label {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+    }
+}
 
+@media (min-width: 730px) {
+    .header_mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
     .header {
         display: none;
     }
-
     .window {
         display: block;
     }
@@ -560,51 +594,4 @@ label{
     .window {
         display: none;
     }
-}
-
-
-
-
-
-/*
-@media (max-width: 730px) {
-    .header{
-    display: none;
-    }
-
-}*/
-/*@media (max-width: 730px) {
-    input{
-        width: 300px;
-    }*/
-
-
-
-@font-face {
-    font-family: 'Ubuntu-Regular';
-    src: url("../fonts/Ubuntu-Regular.woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ubuntu-Light';
-    src: url("../fonts/Ubuntu-Light.woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Ubuntu-Italic';
-    src: url('../fonts/Ubuntu-Italic.woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Ubuntu-Medium';
-    src: url('../fonts/Ubuntu-Medium.woff');
-    font-weight: 500;
-    font-style: normal;
 }
