@@ -592,6 +592,9 @@ label {
     }
     input {
         width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     label {
         width: 100%;
