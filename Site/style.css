@@ -72,10 +72,10 @@ a {
     background: url("assets/heroes.png") no-repeat center center;
     background-size: cover;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--BG-color);
-    padding: 1rem 4rem;
+  /*  padding: 1rem 4rem;*/
 }
 
 .mission_1 {
@@ -100,15 +100,66 @@ a {
     }
 }
 
-.mission_block {
+.mission_block{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mission_bg {
     color: var(--Font-color);
     font-size: var(--Font-size-text);
     background: var(--BG-color-2);
     box-shadow: var(--Box-shadow);
     border-radius: var(--Border-radius);
     box-sizing: border-box;
+    width: 80%;
+    padding: 1.5rem;
+}
+
+.mission_text {
     width: 500px;
-    padding: 2rem;
+    height: 100%;
+
+}
+
+.image_office{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.office1{
+    background: url("./assets/office/office1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    margin: 1rem;
+}
+
+.office2{
+    background: url("./assets/office/office2.jpg") no-repeat center center;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    margin: 1rem;
+}
+
+.office3{
+    background: url("./assets/office/office3.jpg") no-repeat center center;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    margin: 1rem 0 1rem 0;
+}
+
+.office4{
+    background: url("./assets/office/office4.jpg") no-repeat center center;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    margin: 1rem 0 1rem 0;
 }
 
 
@@ -120,6 +171,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 
@@ -182,7 +234,7 @@ button {
     color: var(--White-color);
     box-shadow: var(--Box-shadow);
     border: none;
-    margin: 1.5rem 0 1rem 0;
+    margin: 2rem 0 0 0;
 
 }
 
@@ -298,25 +350,13 @@ a {
     transform: rotate(-45deg);
 }
 
-
-/*Burger*/
-
-
-.footer {
+footer{
     width: 100%;
-    height: 60px;
-    background-color: var(--Black-color);
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
 
-.logo_mobile {
-    margin: 1rem;
-    background: url("./assets/Logo.png") no-repeat center center;
-    background-size: contain;
-    width: 100px;
-    height: 80px;
 }
 
 .logo_footer {
@@ -342,6 +382,21 @@ a {
     height: 20px;
     margin-right: 10px;
 }
+
+.footer_block{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Burger*/
+.logo_mobile {
+    margin: 1rem;
+    background: url("./assets/Logo.png") no-repeat center center;
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+}
+
 
 .header_mobile {
     display: flex;
@@ -416,7 +471,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*width: min-content;*/
 
 }
 
@@ -566,17 +620,14 @@ label {
     }
 
 
-
-
-
-    .mission_block {
+    .mission_bg {
         color: var(--Font-color);
         font-size: var(--Font-size-mobile);
         background: var(--BG-color-2);
         box-shadow: var(--Box-shadow);
         border-radius: var(--Border-radius);
         box-sizing: border-box;
-        width: 100%;
+        width: 80%;
         padding: 2rem;
     }
     input {
