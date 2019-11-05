@@ -664,9 +664,11 @@ label {
     }
 }
 
+/*
 @media (max-width: 880px) {
     .mail {
         display: none;
     }
 }
+*/
 
