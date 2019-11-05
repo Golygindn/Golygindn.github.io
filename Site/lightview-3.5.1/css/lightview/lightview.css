@@ -1,15 +1,4 @@
-/*
- *  Part of Lightview - The jQuery Lightbox
- *  http://projects.nickstakenburg.com/lightview
- *
- *  IMPORTANT:
- *  When modifying or adding skins it's recommended to do this in a seperate file,
- *  overwriting or building on top of the styling defined here to make updating easier.
- *
- *  Documentation:
- *  http://projects.nickstakenburg.com/lightview/documentation/skins
- *
- */
+
 
 .lv_window {
   position: absolute;
@@ -147,10 +136,10 @@
   left: 0;
 }
 
-.lv_content_wrapper canvas {
+/*.lv_content_wrapper canvas {
   float: left;
   zoom: 1;
-}
+}*/
 
 .lv_content {
   position: absolute;
@@ -166,7 +155,7 @@
   float: left;
   clear: both;
 }
-.lv_content_canvas,
+/*.lv_content_canvas,*/
 .lv_content_image,
 .lv_content_flash,
 .lv_content_object,
@@ -257,7 +246,7 @@
   /* left or right is set on the css of the skin */
 }
 .lv_button_top_close:hover {
-  background-position: -33px 0px;
+  color: #000;
 }
 
 
@@ -692,8 +681,8 @@
 .lv_controls_top_skin_mac .lv_icon,
 .lv_controls_top_close_skin_mac .lv_controls_top_close_button,
 .lv_thumbnails_skin_mac .lv_thumbnail_icon {
-  background-image: url('skins/mac/sprite.png') !important;
-  background-image: url('skins/mac/sprite_ie_lt_7.png'); /* IE < 7 */
+/*  background-image: url('skins/mac/sprite.png') !important;
+  background-image: url('skins/mac/sprite_ie_lt_7.png'); !* IE < 7 *!*/
 }
 
 /* close button */
