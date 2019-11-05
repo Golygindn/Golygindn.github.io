@@ -124,6 +124,7 @@
   height: 5000px;
   visibility: hidden;
 }
+
 .lv_update_queue .lv_window,
 .lv_update_queue .lv_content {
   position: relative;
@@ -133,16 +134,19 @@
   left: auto;
   width: 100%;
 }
+
 .lv_content .lv_content_wrapper {
   float: left;
   clear: both;
   position: relative;  
 }
+
 .lv_update_queue .lv_content_wrapper {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .lv_content_wrapper canvas {
   float: left;
   zoom: 1;
@@ -244,9 +248,10 @@
   height: 33px;
   position: absolute;
   cursor: pointer;
-  background-image: url("skins/light/sprite.png");
+  background-image: url("skins/mac/closed.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
+  /*background-color: var(--White-color);*/
   /* the spacing option set on the relative controls is taken into account when positioning */
   top: 17px;
   /* left or right is set on the css of the skin */
@@ -262,7 +267,7 @@
  */
 .lv_controls_top {
   position: fixed;
-  top: 0;
+  top: 0;z
   left: 50%;
   width: 126px;
   margin-left: -63px;
@@ -443,8 +448,7 @@
   float: left;
 }
 .lv_slider .lv_icon {
-  background: url('skins/light/sprite.png');
-  background-repeat: no-repeat;
+  background: url('skins/light/sprite.png') no-repeat;
   /* IE6 */
   position: absolute; 
   top: 0;
@@ -647,7 +651,7 @@
 .lv_controls_top_skin_dark .lv_icon,
 .lv_controls_top_close_skin_dark .lv_controls_top_close_button,
 .lv_thumbnails_skin_dark .lv_thumbnail_icon {
-  background-image: url('skins/dark/sprite.png') !important;
+  background-image: url('skins/dark/sprite.png')
   background-image: url('skins/dark/sprite_ie_lt_7.png'); /* IE < 7 */
 }
 
