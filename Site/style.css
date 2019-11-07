@@ -672,3 +672,7 @@ label {
 }
 */
 
+
+.lv_skin > canvas{
+    display: none;
+}
